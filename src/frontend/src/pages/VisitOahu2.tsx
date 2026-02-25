@@ -248,7 +248,7 @@ export default function VisitOahu2() {
                 to="/"
                 className="text-white/80 hover:text-golden transition-colors duration-200 text-sm font-medium tracking-wide"
               >
-                Hawaii Guide
+                All Islands
               </Link>
             </div>
             <button
@@ -554,7 +554,7 @@ export default function VisitOahu2() {
                 Tips
               </button>
               <Link to="/" className="hover:text-golden transition-colors">
-                Hawaii Guide
+                All Islands
               </Link>
             </div>
             <p className="text-white/50 text-sm text-center">
