@@ -273,7 +273,7 @@ export default function VisitOahu2() {
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
             <Star className="w-4 h-4 text-golden fill-golden" />
-            <span className="text-white/90 text-sm font-medium">The Gathering Place</span>
+            <span className="text-white/90 text-sm font-medium">Visit Oahu</span>
           </div>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 drop-shadow-2xl">
             Visit

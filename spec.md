@@ -1,13 +1,30 @@
-# Specification
+# Hawaii Guide
 
-## Summary
-**Goal:** Add a Dining Hawaii blog section to the existing Hawaii Guide, showcasing local restaurants and Hawaiian culinary culture in a style consistent with the rest of the guide.
+## Current State
 
-**Planned changes:**
-- Add a "Dining" nav link in the main navigation that smooth-scrolls to the new section
-- Create a Dining Hawaii blog section with at least 6 static dining cards, each displaying a title, short description, cuisine/food type tag, island location, and an image
-- Cover topics including poke bowls, shave ice, plate lunch, luau feasts, fine dining, and local markets
-- Style the section using the existing tropical color palette (ocean, golden, coral, sand) and card layouts matching DestinationCard/ActivityCard components
-- Load dining card images from the generated assets folder
+The Visit Oahu page displays:
+- Navigation bar with "Visit Oahu" title in the left
+- Hero section with "Aloha" subtitle badge above main title
+- Hero title: "Visit" / "Oahu"
+- Full-page sections for Attractions, Activities, Dining, and Tips
 
-**User-visible outcome:** Users can navigate to a new Dining Hawaii section from the main page and browse blog-style cards highlighting diverse Hawaiian food experiences across the islands.
+## Requested Changes (Diff)
+
+### Add
+- Replace the "Aloha" subtitle badge text in the hero section with "Visit Oahu"
+
+### Modify
+- Hero section subtitle badge: change from "The Gathering Place" to "Visit Oahu"
+
+### Remove
+- None
+
+## Implementation Plan
+
+**Frontend**
+- Update VisitOahu2.tsx hero section: replace the subtitle badge text from "The Gathering Place" to "Visit Oahu" (line 276)
+- Validate with typecheck, lint, and build
+
+## UX Notes
+
+The user wants "Visit Oahu" to appear prominently in the hero subtitle badge where "Aloha" or "The Gathering Place" currently displays — this strengthens the page branding and makes the island name immediately visible in the hero section.
