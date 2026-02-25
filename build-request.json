@@ -1,0 +1,85 @@
+{
+  "kind": "build_request",
+  "title": "Add Dining Hawaii Blog Section",
+  "projectName": "Hawaii Guide",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Create a dedicated Dining Hawaii blog page/section featuring local restaurants, Hawaiian food culture, and culinary experiences. Include a blog-style layout with featured dining posts, each containing a title, description, cuisine type tag, location (island), and an image. Cover topics such as plate lunch culture, shave ice, poke bowls, luau feasts, and fine dining options across the islands.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-8"
+        ],
+        "quotes": [
+          "Create a dining hawaii blog"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A Dining Hawaii blog page or section is accessible from the main Hawaii guide navigation",
+        "The blog displays at least 6 dining posts/cards covering different culinary experiences and islands",
+        "Each dining card shows a title, short description, cuisine/food type tag, and island location",
+        "Content covers a variety of Hawaii food culture topics (e.g., poke, plate lunch, shave ice, luau, local restaurants)",
+        "Smooth scroll navigation or a nav link connects to the dining section from the main page"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Apply the existing warm tropical visual theme (golden yellows, coral, ocean teal, sandy beige, tropical typography) consistently to the new Dining Hawaii blog section, using card-based layouts that match the style of the existing destinations and activities sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-8"
+        ],
+        "quotes": [
+          "Create a dining hawaii blog"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The dining blog section uses the same tropical color palette defined in tailwind.config.js (ocean, golden, coral, sand tokens)",
+        "Card layouts in the dining section visually match the style of DestinationCard and ActivityCard components",
+        "Typography is consistent with the rest of the Hawaii guide page"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Use generated static images (stored in frontend/public/assets/generated) as visuals for the dining blog cards and any hero/banner area for the dining section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-8"
+        ],
+        "quotes": [
+          "Create a dining hawaii blog"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each dining card displays a relevant food/restaurant image loaded from frontend/public/assets/generated",
+        "Images are properly sized and styled within the card layout"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Preserve all existing Hawaii guide sections (hero, destinations, activities, travel tips, footer)",
+    "Maintain the existing tropical color system defined in tailwind.config.js and index.css"
+  ],
+  "nonGoals": [
+    "No backend data persistence for blog posts — all content is static",
+    "No user-generated content, comments, or authentication for the blog",
+    "No external restaurant API integrations",
+    "No removal or restructuring of existing Hawaii guide page sections"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Overhead shot of a classic Hawaiian poke bowl with fresh ahi tuna, rice, and toppings (dining-poke-bowl.dim_800x600.png)",
+      "Colorful Hawaiian shave ice dessert with tropical syrup flavors at a beachside stand (dining-shave-ice.dim_800x600.png)",
+      "Traditional Hawaiian plate lunch with kalua pork, rice, and macaroni salad (dining-plate-lunch.dim_800x600.png)",
+      "Festive Hawaiian luau feast spread with roasted pig, tropical fruits, and poi (dining-luau-feast.dim_800x600.png)",
+      "Upscale open-air Hawaiian restaurant with ocean view and tropical decor at sunset (dining-fine-dining.dim_800x600.png)",
+      "Fresh tropical fruit market stall in Hawaii with pineapples, mangoes, and papayas (dining-fruit-market.dim_800x600.png)"
+    ],
+    "edits": []
+  }
+}

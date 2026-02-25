@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Tropical Color Palette */
+    /* Ocean Deep - deep teal/navy */
+    --ocean-deep: 0.22 0.07 220;
+    /* Ocean - medium teal */
+    --ocean: 0.52 0.12 210;
+    /* Ocean Pale - very light teal */
+    --ocean-pale: 0.95 0.03 210;
+    /* Golden - warm sun yellow */
+    --golden: 0.82 0.16 80;
+    /* Golden Dark */
+    --golden-dark: 0.72 0.16 75;
+    /* Coral - warm coral/orange-red */
+    --coral: 0.65 0.18 30;
+    /* Coral Dark */
+    --coral-dark: 0.55 0.18 28;
+    /* Sand - warm sandy beige */
+    --sand: 0.97 0.02 80;
+    /* Sand Dark */
+    --sand-dark: 0.88 0.04 80;
+
+    /* Semantic tokens mapped to tropical palette */
+    --background: 0.97 0.02 80;
+    --foreground: 0.22 0.07 220;
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.07 220;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.07 220;
+    --primary: 0.65 0.18 30;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.03 210;
+    --secondary-foreground: 0.22 0.07 220;
+    --muted: 0.95 0.03 210;
+    --muted-foreground: 0.52 0.07 220;
+    --accent: 0.82 0.16 80;
+    --accent-foreground: 0.22 0.07 220;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.04 80;
+    --input: 0.88 0.04 80;
+    --ring: 0.52 0.12 210;
+    --chart-1: 0.65 0.18 30;
+    --chart-2: 0.52 0.12 210;
+    --chart-3: 0.82 0.16 80;
+    --chart-4: 0.22 0.07 220;
+    --chart-5: 0.72 0.16 75;
+    --sidebar: 0.22 0.07 220;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.65 0.18 30;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.52 0.12 210;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.52 0.12 210;
+  }
+
+  .dark {
+    --background: 0.18 0.06 220;
+    --foreground: 0.97 0.02 80;
+    --card: 0.22 0.07 220;
+    --card-foreground: 0.97 0.02 80;
+    --popover: 0.25 0.07 220;
+    --popover-foreground: 0.97 0.02 80;
+    --primary: 0.65 0.18 30;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.28 0.07 220;
+    --secondary-foreground: 0.97 0.02 80;
+    --muted: 0.28 0.07 220;
+    --muted-foreground: 0.65 0.05 210;
+    --accent: 0.82 0.16 80;
+    --accent-foreground: 0.22 0.07 220;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.22 0.07 220;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.52 0.12 210;
+    --sidebar: 0.22 0.07 220;
+    --sidebar-foreground: 0.97 0.02 80;
+    --sidebar-primary: 0.65 0.18 30;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.28 0.07 220;
+    --sidebar-accent-foreground: 0.97 0.02 80;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.52 0.12 210;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}

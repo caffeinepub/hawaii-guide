@@ -1,0 +1,76 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Dining Hawaii Blog Section",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Create a dedicated Dining Hawaii blog section with featured dining posts covering local restaurants, Hawaiian food culture, and culinary experiences across the islands",
+      "acceptanceCriteria": [
+        "A Dining Hawaii blog page or section is accessible from the main Hawaii guide navigation",
+        "The blog displays at least 6 dining posts/cards covering different culinary experiences and islands",
+        "Each dining card shows a title, short description, cuisine/food type tag, and island location",
+        "Content covers a variety of Hawaii food culture topics (e.g., poke, plate lunch, shave ice, luau, local restaurants)",
+        "Smooth scroll navigation or a nav link connects to the dining section from the main page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DiningCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable card component for displaying dining blog posts with image, title, description, cuisine type tag, and island location. Match the visual style of DestinationCard and ActivityCard components using the tropical color palette. Each card should display an image from frontend/public/assets/generated, a title, short description, cuisine/food type badge, and island location badge."
+        },
+        {
+          "path": "frontend/src/pages/HawaiiGuide.tsx",
+          "operation": "modify",
+          "description": "Add a new Dining section to the HawaiiGuide page after the activities section and before travel tips. Create a diningPosts data array containing 6 posts covering poke bowls, shave ice, plate lunch, luau feasts, fine dining, and fruit markets. Each post should reference the corresponding generated image from frontend/public/assets/generated using exact filenames: dining-poke-bowl.dim_800x600.png, dining-shave-ice.dim_800x600.png, dining-plate-lunch.dim_800x600.png, dining-luau-feast.dim_800x600.png, dining-fine-dining.dim_800x600.png, and dining-fruit-market.dim_800x600.png. Include cuisine type and island location metadata for each post. Render the section using DiningCard components in a responsive grid layout matching the existing sections' style."
+        },
+        {
+          "path": "frontend/src/pages/HawaiiGuide.tsx",
+          "operation": "modify",
+          "description": "Add smooth scroll navigation link or anchor to the Dining section in the page header/navigation area, ensuring it connects users from the main page to the new dining content. Position it consistently with existing section navigation patterns."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Apply the existing warm tropical visual theme consistently to the Dining Hawaii blog section using card-based layouts that match the style of existing sections",
+      "acceptanceCriteria": [
+        "The dining blog section uses the same tropical color palette defined in tailwind.config.js (ocean, golden, coral, sand tokens)",
+        "Card layouts in the dining section visually match the style of DestinationCard and ActivityCard components",
+        "Typography is consistent with the rest of the Hawaii guide page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DiningCard.tsx",
+          "operation": "modify",
+          "description": "Ensure DiningCard component uses Tailwind classes that reference the tropical color tokens (bg-ocean, text-golden, border-coral, bg-sand) defined in tailwind.config.js. Apply card styling (rounded corners, shadows, hover effects) consistent with DestinationCard and ActivityCard. Use the display and body font families from the theme for headings and body text."
+        },
+        {
+          "path": "frontend/src/pages/HawaiiGuide.tsx",
+          "operation": "modify",
+          "description": "Style the Dining section container using the same tropical color palette and spacing patterns as the Destinations and Activities sections. Apply consistent section heading typography, grid layout spacing, and background colors that match the existing Hawaii guide aesthetic."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Use generated static images from frontend/public/assets/generated as visuals for the dining blog cards",
+      "acceptanceCriteria": [
+        "Each dining card displays a relevant food/restaurant image loaded from frontend/public/assets/generated",
+        "Images are properly sized and styled within the card layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DiningCard.tsx",
+          "operation": "modify",
+          "description": "Configure the image element in DiningCard to load images from the /assets/generated/ path. Apply consistent image sizing (aspect ratio, object-fit) and styling (rounded corners, borders) that matches the visual treatment in DestinationCard and ActivityCard components. Ensure images display at 800x600 dimensions or scale responsively within the card layout."
+        },
+        {
+          "path": "frontend/src/pages/HawaiiGuide.tsx",
+          "operation": "modify",
+          "description": "Wire the six generated dining images into the diningPosts data array using their exact workspace paths: frontend/public/assets/generated/dining-poke-bowl.dim_800x600.png, frontend/public/assets/generated/dining-shave-ice.dim_800x600.png, frontend/public/assets/generated/dining-plate-lunch.dim_800x600.png, frontend/public/assets/generated/dining-luau-feast.dim_800x600.png, frontend/public/assets/generated/dining-fine-dining.dim_800x600.png, and frontend/public/assets/generated/dining-fruit-market.dim_800x600.png. Ensure each post object includes the full image path as a property that will be passed to DiningCard components."
+        }
+      ]
+    }
+  ]
+}

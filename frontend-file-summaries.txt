@@ -1,0 +1,9 @@
+{
+  "frontend/src/App.tsx": "Root application component that renders the HawaiiGuide page as the default route.",
+  "frontend/src/pages/HawaiiGuide.tsx": "Full Hawaii travel guide page with sticky navigation (now including Dining link), hero section, destinations, activities, a new Dining section with 6 blog cards (poke bowl, shave ice, plate lunch, luau feast, fine dining, fruit market), travel tips, CTA banner, and footer.",
+  "frontend/src/components/DestinationCard.tsx": "Reusable card component for displaying Hawaiian island destinations with image, name, nickname, description, highlights badges, and a \"best for\" tag.",
+  "frontend/src/components/ActivityCard.tsx": "Reusable card component for displaying featured Hawaii activities with image, name, description, difficulty level, and duration metadata.",
+  "frontend/src/index.css": "Global styles with tropical OKLCH color system (ocean-deep, ocean, golden, coral, sand), Google Fonts import for Playfair Display and Inter, and smooth scroll behavior.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with tropical color tokens (ocean-deep, ocean, ocean-pale, golden, coral, sand), Playfair Display display font and Inter body font families.",
+  "frontend/src/components/DiningCard.tsx": "Reusable card component for displaying Hawaii dining blog posts with image, title, description, cuisine type badge (golden), and island location badge (ocean-deep), styled consistently with DestinationCard and ActivityCard."
+}

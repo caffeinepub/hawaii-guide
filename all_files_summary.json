@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend canister placeholder with no implemented methods.",
+  "feature_evidence.json": "Feature evidence report mapping three dining-related features (blog layout, tropical theme, static images) to their implementing files and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file for documentation or build planning purposes.",
+  "frontend/index.css": "Base Tailwind CSS entry point defining light and dark mode CSS custom properties for the default shadcn-style color system.",
+  "frontend/index.html": "HTML entry point for the React app, mounting the root div and loading the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that renders the HawaiiGuide page as the sole route.",
+  "frontend/src/components/ActivityCard.tsx": "Reusable card component displaying a Hawaii activity with image, name, description, difficulty, and duration metadata.",
+  "frontend/src/components/DestinationCard.tsx": "Reusable card component displaying a Hawaiian island destination with image, name, nickname, description, highlight badges, and a best-for tag.",
+  "frontend/src/components/DiningCard.tsx": "Reusable card component displaying a Hawaii dining blog post with image, title, description, cuisine type badge, and island location badge.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using React Query, recreating it when the Internet Identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom hook and context provider managing Internet Identity authentication state, including login, logout, and identity persistence via AuthClient.",
+  "frontend/src/index.css": "Global stylesheet importing Google Fonts and defining the tropical OKLCH color token system (ocean, golden, coral, sand) with smooth scroll and base typography.",
+  "frontend/src/main.tsx": "React application entry point that wraps the app with QueryClientProvider and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/src/pages/HawaiiGuide.tsx": "Main Hawaii travel guide page component that renders sections for destinations (Oahu, Maui, Big Island, Kauai), activities (surfing, snorkeling, hiking, luau), and dining posts using DestinationCard, ActivityCard, and DiningCard components with static data arrays.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom tropical color tokens (ocean, golden, coral, sand), display/body font families, container settings, border radius variables, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state metadata file tracking version, summary, existing features, and image requirements for a Hawaii travel guide web app with destinations, activities, and a dining blog section."
+}

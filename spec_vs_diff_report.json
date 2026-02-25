@@ -1,0 +1,15 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T14:38:46.157Z",
+  "summary": "The diff implements a Dining Hawaii blog section with a DiningCard component, 6 dining posts covering poke bowl, shave ice, plate lunch, luau feast, fine dining, and fruit market, navigation link added to main page, and images loaded from frontend/public/assets/generated. All three requirements appear to be substantially satisfied.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.92,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/DiningCard.tsx",
+    "frontend/src/pages/HawaiiGuide.tsx",
+    "project_state.json"
+  ]
+}

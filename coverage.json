@@ -1,0 +1,78 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T14:38:46.160Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-4",
+        "summary": "Create a dedicated Dining Hawaii blog page/section featuring local restaurants, Hawaiian food culture, and culinary experiences. Include a blog-style layout with featured dining posts, each containing a title, description, cuisine type tag, location (island), and an image. Cover topics such as plate lunch culture, shave ice, poke bowls, luau feasts, and fine dining options across the islands.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Apply the existing warm tropical visual theme (golden yellows, coral, ocean teal, sandy beige, tropical typography) consistently to the new Dining Hawaii blog section, using card-based layouts that match the style of the existing destinations and activities sections.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Use generated static images (stored in frontend/public/assets/generated) as visuals for the dining blog cards and any hero/banner area for the dining section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DiningCard.tsx",
+          "frontend/src/pages/HawaiiGuide.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/blob-storage/Mixin.mo",
+    "backend/blob-storage/Storage.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/dining-fine-dining.dim_800x600.png",
+    "frontend/public/assets/generated/dining-fruit-market.dim_800x600.png",
+    "frontend/public/assets/generated/dining-luau-feast.dim_800x600.png",
+    "frontend/public/assets/generated/dining-plate-lunch.dim_800x600.png",
+    "frontend/public/assets/generated/dining-poke-bowl.dim_800x600.png",
+    "frontend/public/assets/generated/dining-shave-ice.dim_800x600.png",
+    "frontend/src/components/DiningCard.tsx",
+    "frontend/src/pages/HawaiiGuide.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

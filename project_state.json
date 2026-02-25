@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "A Hawaii travel guide web page with an additional dining Hawaii blog section.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Overhead shot of a classic Hawaiian poke bowl with fresh ahi tuna, rice, and toppings (dining-poke-bowl.dim_800x600.png)\n- Colorful Hawaiian shave ice dessert with tropical syrup flavors at a beachside stand (dining-shave-ice.dim_800x600.png)\n- Traditional Hawaiian plate lunch with kalua pork, rice, and macaroni salad (dining-plate-lunch.dim_800x600.png)\n- Festive Hawaiian luau feast spread with roasted pig, tropical fruits, and poi (dining-luau-feast.dim_800x600.png)\n- Upscale open-air Hawaiian restaurant with ocean view and tropical decor at sunset (dining-fine-dining.dim_800x600.png)\n- Fresh tropical fruit market stall in Hawaii with pineapples, mangoes, and papayas (dining-fruit-market.dim_800x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-rich-hawaii-travel-guide-landing-page-featuring-sections-for-a-hero-banner-with-hawaii-imagery-and-headline-top-destinations-e-g-oahu-maui-big-island-kauai-with-descriptions-and-images-featured-activities-e-g-surfing-snorkeling-hiking-luau-best-travel-tips-and-a-footer-with-basic-info",
+      "title": "Create a visually rich Hawaii travel guide landing page featuring sections for: a hero banner with Hawaii imagery and headline, top destinations (e.g., Oahu, Maui, Big Island, Kauai) with descriptions and images, featured activities (e.g., surfing, snorkeling, hiking, luau), best travel tips, and a footer with basic info.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-tropical-visual-theme-throughout-the-page-use-sun-soaked-warm-tones-golden-yellows-coral-ocean-teal-sandy-beige-tropical-style-typography-smooth-scroll-navigation-between-sections-and-card-based-layouts-for-destinations-and-activities-ensure-the-design-is-consistent-and-immersive",
+      "title": "Apply a warm tropical visual theme throughout the page: use sun-soaked warm tones (golden yellows, coral, ocean teal, sandy beige), tropical-style typography, smooth scroll navigation between sections, and card-based layouts for destinations and activities. Ensure the design is consistent and immersive.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-generated-static-images-stored-in-frontend-public-assets-generated-as-visuals-for-the-hero-banner-and-destination-activity-cards-throughout-the-hawaii-guide-page",
+      "title": "Use the generated static images (stored in frontend/public/assets/generated) as visuals for the hero banner and destination/activity cards throughout the Hawaii guide page.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-dining-hawaii-blog-page-section-featuring-local-restaurants-hawaiian-food-culture-and-culinary-experiences-include-a-blog-style-layout-with-featured-dining-posts-each-containing-a-title-description-cuisine-type-tag-location-island-and-an-image-cover-topics-such-as-plate-lunch-culture-shave-ice-poke-bowls-luau-feasts-and-fine-dining-options-across-the-islands",
+      "title": "Create a dedicated Dining Hawaii blog page/section featuring local restaurants, Hawaiian food culture, and culinary experiences. Include a blog-style layout with featured dining posts, each containing a title, description, cuisine type tag, location (island), and an image. Cover topics such as plate lunch culture, shave ice, poke bowls, luau feasts, and fine dining options across the islands.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-existing-warm-tropical-visual-theme-golden-yellows-coral-ocean-teal-sandy-beige-tropical-typography-consistently-to-the-new-dining-hawaii-blog-section-using-card-based-layouts-that-match-the-style-of-the-existing-destinations-and-activities-sections",
+      "title": "Apply the existing warm tropical visual theme (golden yellows, coral, ocean teal, sandy beige, tropical typography) consistently to the new Dining Hawaii blog section, using card-based layouts that match the style of the existing destinations and activities sections.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-generated-static-images-stored-in-frontend-public-assets-generated-as-visuals-for-the-dining-blog-cards-and-any-hero-banner-area-for-the-dining-section",
+      "title": "Use generated static images (stored in frontend/public/assets/generated) as visuals for the dining blog cards and any hero/banner area for the dining section.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a dining Hawaii blog section/page featuring local restaurants, food culture, and culinary experiences in Hawaii",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Hawaii Guide",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

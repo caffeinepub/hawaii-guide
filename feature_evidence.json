@@ -1,0 +1,65 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-dedicated-dining-hawaii-blog-page-section-featuring-local-restaurants-hawaiian-food-culture-and-culinary-experiences-include-a-blog-style-layout-with-featured-dining-posts-each-containing-a-title-description-cuisine-type-tag-location-island-and-an-image-cover-topics-such-as-plate-lunch-culture-shave-ice-poke-bowls-luau-feasts-and-fine-dining-options-across-the-islands",
+      "featureTitle": "Create a dedicated Dining Hawaii blog page/section featuring local restaurants, Hawaiian food culture, and culinary experiences. Include a blog-style layout with featured dining posts, each containing a title, description, cuisine type tag, location (island), and an image. Cover topics such as plate lunch culture, shave ice, poke bowls, luau feasts, and fine dining options across the islands.",
+      "files": [
+        "frontend/src/components/DiningCard.tsx",
+        "frontend/src/pages/HawaiiGuide.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-the-existing-warm-tropical-visual-theme-golden-yellows-coral-ocean-teal-sandy-beige-tropical-typography-consistently-to-the-new-dining-hawaii-blog-section-using-card-based-layouts-that-match-the-style-of-the-existing-destinations-and-activities-sections",
+      "featureTitle": "Apply the existing warm tropical visual theme (golden yellows, coral, ocean teal, sandy beige, tropical typography) consistently to the new Dining Hawaii blog section, using card-based layouts that match the style of the existing destinations and activities sections.",
+      "files": [
+        "frontend/src/components/DiningCard.tsx",
+        "frontend/src/pages/HawaiiGuide.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-use-generated-static-images-stored-in-frontend-public-assets-generated-as-visuals-for-the-dining-blog-cards-and-any-hero-banner-area-for-the-dining-section",
+      "featureTitle": "Use generated static images (stored in frontend/public/assets/generated) as visuals for the dining blog cards and any hero/banner area for the dining section.",
+      "files": [
+        "frontend/src/components/DiningCard.tsx",
+        "frontend/src/pages/HawaiiGuide.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
