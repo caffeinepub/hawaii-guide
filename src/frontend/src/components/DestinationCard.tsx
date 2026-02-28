@@ -31,14 +31,18 @@ export default function DestinationCard({
           </span>
         </div>
         <div className="absolute bottom-4 left-4">
-          <h3 className="font-display text-3xl font-bold text-white drop-shadow-lg">{name}</h3>
+          <h3 className="font-display text-3xl font-bold text-white drop-shadow-lg">
+            {name}
+          </h3>
           <p className="text-white/80 text-sm font-medium">{nickname}</p>
         </div>
       </div>
 
       {/* Content */}
       <div className="p-6">
-        <p className="text-ocean-deep/70 text-sm leading-relaxed mb-5">{description}</p>
+        <p className="text-ocean-deep/70 text-sm leading-relaxed mb-5">
+          {description}
+        </p>
 
         {/* Highlights */}
         <div>

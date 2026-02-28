@@ -41,7 +41,9 @@ export default function DiningCard({
         <h3 className="font-display text-xl font-bold text-ocean-deep mb-2 group-hover:text-coral transition-colors duration-300">
           {title}
         </h3>
-        <p className="text-ocean-deep/65 text-sm leading-relaxed">{description}</p>
+        <p className="text-ocean-deep/65 text-sm leading-relaxed">
+          {description}
+        </p>
       </div>
     </article>
   );

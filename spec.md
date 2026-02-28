@@ -1,30 +1,24 @@
-# Hawaii Guide
+# Hawaii Guide / Visit Oahu
 
 ## Current State
+The app has three pages:
+- `/` — HawaiiGuide (main Hawaii guide)
+- `/dining` — DiningHawaii (dining blog with search/filter)
+- `/visit-oahu` — VisitOahu2 (Visit Oahu standalone page with attractions, activities, dining, and tips)
 
-The Visit Oahu page displays:
-- Navigation bar with "Visit Oahu" title in the left
-- Hero section with "Aloha" subtitle badge above main title
-- Hero title: "Visit" / "Oahu"
-- Full-page sections for Attractions, Activities, Dining, and Tips
+The VisitOahu2 page is fully built with branding "Visit Oahu", a hero section using the uploaded coastline photo, attraction cards, activity cards, dining highlights, visitor tips, and a footer.
 
 ## Requested Changes (Diff)
 
 ### Add
-- Replace the "Aloha" subtitle badge text in the hero section with "Visit Oahu"
+- Nothing new
 
 ### Modify
-- Hero section subtitle badge: change from "The Gathering Place" to "Visit Oahu"
+- Nothing to change in the code — a full redeploy is needed
 
 ### Remove
-- None
+- Nothing
 
 ## Implementation Plan
-
-**Frontend**
-- Update VisitOahu2.tsx hero section: replace the subtitle badge text from "The Gathering Place" to "Visit Oahu" (line 276)
-- Validate with typecheck, lint, and build
-
-## UX Notes
-
-The user wants "Visit Oahu" to appear prominently in the hero subtitle badge where "Aloha" or "The Gathering Place" currently displays — this strengthens the page branding and makes the island name immediately visible in the hero section.
+- Redeploy the existing frontend as-is (no code changes needed)
+- The deployment has been failing due to infrastructure errors, not code errors

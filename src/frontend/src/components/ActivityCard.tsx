@@ -1,4 +1,4 @@
-import { Clock, BarChart2 } from 'lucide-react';
+import { BarChart2, Clock } from "lucide-react";
 
 interface ActivityCardProps {
   name: string;
@@ -29,8 +29,12 @@ export default function ActivityCard({
 
       {/* Content */}
       <div className="p-5 flex flex-col flex-1">
-        <h3 className="font-display text-xl font-bold text-ocean-deep mb-2">{name}</h3>
-        <p className="text-ocean-deep/65 text-sm leading-relaxed mb-4 flex-1">{description}</p>
+        <h3 className="font-display text-xl font-bold text-ocean-deep mb-2">
+          {name}
+        </h3>
+        <p className="text-ocean-deep/65 text-sm leading-relaxed mb-4 flex-1">
+          {description}
+        </p>
 
         {/* Meta */}
         <div className="flex items-center gap-4 pt-3 border-t border-sand-dark/20">
