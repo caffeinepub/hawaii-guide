@@ -32,6 +32,7 @@ const attractions = [
     icon: <Waves className="w-4 h-4" />,
     category: "Beach",
     mustDo: "Surf lesson at sunset",
+    color: "from-ocean to-ocean-deep",
   },
   {
     name: "Diamond Head",
@@ -41,6 +42,7 @@ const attractions = [
     icon: <Mountain className="w-4 h-4" />,
     category: "Hiking",
     mustDo: "Sunrise summit hike",
+    color: "from-tropical-green to-ocean",
   },
   {
     name: "North Shore",
@@ -50,6 +52,7 @@ const attractions = [
     icon: <Waves className="w-4 h-4" />,
     category: "Surf & Beach",
     mustDo: "Shrimp trucks + sunset",
+    color: "from-ocean to-fuchsia",
   },
   {
     name: "Pearl Harbor",
@@ -59,6 +62,7 @@ const attractions = [
     icon: <Landmark className="w-4 h-4" />,
     category: "History",
     mustDo: "USS Arizona tour",
+    color: "from-ocean-deep to-ocean",
   },
   {
     name: "Lanikai Beach",
@@ -68,6 +72,7 @@ const attractions = [
     icon: <Palmtree className="w-4 h-4" />,
     category: "Beach",
     mustDo: "Kayak to Mokes",
+    color: "from-golden to-coral",
   },
   {
     name: "Kailua Beach",
@@ -77,6 +82,7 @@ const attractions = [
     icon: <Wind className="w-4 h-4" />,
     category: "Beach & Water Sports",
     mustDo: "Kite surfing lesson",
+    color: "from-coral to-fuchsia",
   },
   {
     name: "Halona Blowhole",
@@ -86,6 +92,7 @@ const attractions = [
     icon: <Camera className="w-4 h-4" />,
     category: "Nature",
     mustDo: "Time your visit with high tide",
+    color: "from-tropical-green to-golden",
   },
 ];
 
@@ -98,6 +105,7 @@ const activities = [
     duration: "2 Hours",
     difficulty: "Beginner",
     bestTime: "Morning",
+    accentColor: "bg-ocean text-white",
   },
   {
     name: "Snorkeling at Hanauma Bay",
@@ -107,6 +115,7 @@ const activities = [
     duration: "3–4 Hours",
     difficulty: "Easy",
     bestTime: "Early Morning",
+    accentColor: "bg-tropical-green text-white",
   },
   {
     name: "Hiking Diamond Head",
@@ -116,6 +125,7 @@ const activities = [
     duration: "1.5–2 Hours",
     difficulty: "Moderate",
     bestTime: "Sunrise or Late Afternoon",
+    accentColor: "bg-golden text-ocean-deep",
   },
   {
     name: "Pearl Harbor Tour",
@@ -125,6 +135,7 @@ const activities = [
     duration: "Half Day",
     difficulty: "Easy",
     bestTime: "Morning (arrive early)",
+    accentColor: "bg-ocean-deep text-white",
   },
   {
     name: "North Shore Shrimp Truck Crawl",
@@ -134,6 +145,7 @@ const activities = [
     duration: "Half Day",
     difficulty: "Easy",
     bestTime: "Lunch Time",
+    accentColor: "bg-coral text-white",
   },
   {
     name: "Sunset at Tantalus Lookout",
@@ -143,6 +155,7 @@ const activities = [
     duration: "1 Hour",
     difficulty: "Easy",
     bestTime: "Sunset",
+    accentColor: "bg-fuchsia text-white",
   },
 ];
 
@@ -152,24 +165,32 @@ const diningHighlights = [
     description:
       "Oahu is the birthplace of this iconic dish — fresh ahi tuna, soy, sesame, and rice.",
     icon: <Fish className="w-6 h-6" />,
+    bg: "bg-ocean",
+    text: "text-white",
   },
   {
     title: "Shrimp Trucks",
     description:
       "North Shore legends serving garlic shrimp, spicy shrimp, and buttery Hawaiian plates.",
     icon: <Flame className="w-6 h-6" />,
+    bg: "bg-coral",
+    text: "text-white",
   },
   {
     title: "Plate Lunch Spots",
     description:
       "Two scoops rice, mac salad, and your choice of protein — the soul of local food.",
     icon: <Soup className="w-6 h-6" />,
+    bg: "bg-tropical-green",
+    text: "text-white",
   },
   {
     title: "Beachfront Dining",
     description:
       "Upscale Pacific Rim cuisine with sunset views over Waikiki and the Pacific.",
     icon: <TrendingUp className="w-6 h-6" />,
+    bg: "bg-golden",
+    text: "text-ocean-deep",
   },
 ];
 
@@ -179,36 +200,42 @@ const visitorTips = [
     title: "Getting Around — TheBus",
     content:
       "Oahu's public bus system (TheBus) is affordable, reliable, and covers the entire island. Single rides are $3, or get a day pass for $7.50. Rent a car if you want flexibility for North Shore and windward beaches.",
+    accent: "border-l-ocean",
   },
   {
     icon: <Home className="w-6 h-6" />,
     title: "Best Neighborhoods to Stay",
     content:
       "Waikiki for beachfront convenience, Kailua for laid-back beach vibes, North Shore for surf culture, or Honolulu for urban energy. Each offers a unique Oahu experience.",
+    accent: "border-l-coral",
   },
   {
     icon: <Sun className="w-6 h-6" />,
     title: "Weather & What to Pack",
     content:
       "Oahu averages 75–85°F year-round. The North Shore and windward coast are rainier; the south and leeward sides are sunnier. Pack reef-safe sunscreen, light layers, and a rain jacket.",
+    accent: "border-l-golden",
   },
   {
     icon: <Cloud className="w-6 h-6" />,
     title: "Best Time to Visit",
     content:
       "April–May and September–November offer great weather and fewer crowds. December–March brings big North Shore surf and whale watching. Summer is calmest for snorkeling.",
+    accent: "border-l-tropical-green",
   },
   {
     icon: <Mountain className="w-6 h-6" />,
     title: "Hiking Tips",
     content:
       "Start early to avoid heat and crowds. Bring plenty of water, wear sturdy shoes, and respect trail closures. Some hikes (Haiku Stairs, Sacred Falls) are illegal and dangerous.",
+    accent: "border-l-fuchsia",
   },
   {
     icon: <Waves className="w-6 h-6" />,
     title: "Ocean Safety",
     content:
       "Never turn your back on the waves. Respect warning flags and posted signs. Rip currents are common — swim parallel to shore to escape. Keep distance from sea turtles (legally required).",
+    accent: "border-l-ocean",
   },
 ];
 
@@ -223,14 +250,14 @@ export default function VisitOahu2() {
   };
 
   return (
-    <div className="min-h-screen bg-sand font-body">
+    <div className="min-h-screen bg-yellow-100 font-body">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-ocean-deep/90 backdrop-blur-md border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-ocean-deep/95 backdrop-blur-md border-b border-golden/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
               <span className="text-2xl">🌴</span>
-              <span className="font-display text-xl font-bold text-white tracking-wide">
+              <span className="font-display text-xl font-bold text-golden tracking-wide">
                 Visit Oahu
               </span>
             </div>
@@ -242,25 +269,28 @@ export default function VisitOahu2() {
                 { label: "Tips", ref: tipsRef },
               ].map(({ label, ref }) => (
                 <button
+                  data-ocid={`nav.${label.toLowerCase()}.link`}
                   type="button"
                   key={label}
                   onClick={() => scrollTo(ref)}
-                  className="text-white/80 hover:text-golden transition-colors duration-200 text-sm font-medium tracking-wide"
+                  className="text-white/80 hover:text-golden transition-colors duration-200 text-sm font-semibold tracking-wide"
                 >
                   {label}
                 </button>
               ))}
               <Link
                 to="/"
-                className="text-white/80 hover:text-golden transition-colors duration-200 text-sm font-medium tracking-wide"
+                data-ocid="nav.all_islands.link"
+                className="text-white/80 hover:text-golden transition-colors duration-200 text-sm font-semibold tracking-wide"
               >
                 All Islands
               </Link>
             </div>
             <button
               type="button"
+              data-ocid="nav.explore.primary_button"
               onClick={() => scrollTo(attractionsRef)}
-              className="bg-coral hover:bg-coral-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-coral/30"
+              className="bg-coral hover:bg-coral-dark text-white text-sm font-bold px-5 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-coral/40"
             >
               Explore Oahu
             </button>
@@ -277,34 +307,38 @@ export default function VisitOahu2() {
               "url('/assets/uploads/FB_IMG_1771357967442-1.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/60 via-ocean-deep/30 to-ocean-deep/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/70 via-ocean-deep/30 to-ocean-deep/80" />
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-golden/20 backdrop-blur-sm border border-golden/40 rounded-full px-4 py-2 mb-6">
             <Star className="w-4 h-4 text-golden fill-golden" />
-            <span className="text-white/90 text-sm font-medium">
+            <span className="text-golden text-sm font-bold tracking-wide">
               Visit Oahu
             </span>
           </div>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 drop-shadow-2xl">
-            Visit
-            <span className="block text-golden">Oahu</span>
+            Aloha,
+            <span className="block text-golden drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
+              Oahu!
+            </span>
           </h1>
-          <p className="text-white/85 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
+          <p className="text-white/90 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed mb-10 font-medium">
             Where legendary surf breaks meet iconic beaches, volcanic craters
             touch the sky, and the aloha spirit shines brightest.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               type="button"
+              data-ocid="hero.explore.primary_button"
               onClick={() => scrollTo(attractionsRef)}
-              className="bg-coral hover:bg-coral-dark text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-xl hover:shadow-coral/40 hover:-translate-y-0.5"
+              className="bg-coral hover:bg-coral-dark text-white font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-coral/50 hover:-translate-y-1"
             >
               Explore Attractions
             </button>
             <Link
               to="/dining"
-              className="bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 text-center"
+              data-ocid="hero.dining.secondary_button"
+              className="bg-golden hover:bg-golden-dark text-ocean-deep font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-xl hover:shadow-golden/40 hover:-translate-y-1 text-center"
             >
               Discover Dining
             </Link>
@@ -314,15 +348,16 @@ export default function VisitOahu2() {
         {/* Scroll indicator */}
         <button
           type="button"
+          data-ocid="hero.scroll.button"
           onClick={() => scrollTo(attractionsRef)}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-white transition-colors animate-bounce"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-golden/80 hover:text-golden transition-colors animate-bounce"
           aria-label="Scroll down"
         >
           <ChevronDown className="w-8 h-8" />
         </button>
 
         {/* Stats bar */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-ocean-deep/80 via-ocean/80 to-ocean-deep/80 backdrop-blur-sm border-t border-white/10">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-ocean-deep via-ocean/90 to-ocean-deep backdrop-blur-sm border-t border-golden/20">
           <div className="max-w-4xl mx-auto px-4 py-4 grid grid-cols-3 gap-4 text-center">
             {[
               { value: "227", label: "Miles of Coastline" },
@@ -333,7 +368,7 @@ export default function VisitOahu2() {
                 <div className="font-display text-2xl font-bold text-golden">
                   {value}
                 </div>
-                <div className="text-white/70 text-xs font-medium tracking-wide uppercase">
+                <div className="text-white/70 text-xs font-semibold tracking-wider uppercase">
                   {label}
                 </div>
               </div>
@@ -343,10 +378,14 @@ export default function VisitOahu2() {
       </section>
 
       {/* Attractions Section */}
-      <section ref={attractionsRef} id="attractions" className="py-24 bg-sand">
+      <section
+        ref={attractionsRef}
+        id="attractions"
+        className="py-24 bg-yellow-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-coral font-semibold text-sm uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 bg-coral/10 text-coral font-bold text-sm uppercase tracking-widest rounded-full px-4 py-2 mb-4">
               <MapPin className="w-4 h-4" />
               <span>Must-See Spots</span>
             </div>
@@ -360,20 +399,23 @@ export default function VisitOahu2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {attractions.map((attraction) => (
+            {attractions.map((attraction, i) => (
               <div
                 key={attraction.name}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-sand-dark/30"
+                data-ocid={`attractions.item.${i + 1}`}
+                className="bg-yellow-50 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-yellow-200 group"
               >
-                <div className="relative h-48">
+                <div className="relative h-52">
                   <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-300 hover:scale-110"
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                     style={{ backgroundImage: `url('${attraction.image}')` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/60 to-transparent" />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t ${attraction.color} opacity-60`}
+                  />
                   <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2">
                     <div className="text-ocean">{attraction.icon}</div>
-                    <span className="text-xs font-semibold text-ocean-deep">
+                    <span className="text-xs font-bold text-ocean-deep">
                       {attraction.category}
                     </span>
                   </div>
@@ -385,9 +427,11 @@ export default function VisitOahu2() {
                   <p className="text-ocean-deep/65 text-sm leading-relaxed mb-4">
                     {attraction.description}
                   </p>
-                  <div className="flex items-center gap-2 text-coral text-sm font-semibold">
-                    <Star className="w-4 h-4 fill-coral" />
-                    <span>Must Do: {attraction.mustDo}</span>
+                  <div className="flex items-center gap-2 bg-coral/10 rounded-full px-3 py-1.5 w-fit">
+                    <Star className="w-4 h-4 text-coral fill-coral" />
+                    <span className="text-coral text-sm font-bold">
+                      Must Do: {attraction.mustDo}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -400,11 +444,11 @@ export default function VisitOahu2() {
       <section
         ref={activitiesRef}
         id="activities"
-        className="py-24 bg-ocean-pale"
+        className="py-24 bg-yellow-100"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-coral font-semibold text-sm uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 bg-ocean/10 text-ocean font-bold text-sm uppercase tracking-widest rounded-full px-4 py-2 mb-4">
               <Waves className="w-4 h-4" />
               <span>Experiences</span>
             </div>
@@ -418,12 +462,15 @@ export default function VisitOahu2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {activities.map((activity) => (
+            {activities.map((activity, i) => (
               <div
                 key={activity.name}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-sand-dark/30"
+                data-ocid={`activities.item.${i + 1}`}
+                className="bg-yellow-50 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-yellow-200 group"
               >
-                <div className="w-14 h-14 bg-ocean-pale rounded-xl flex items-center justify-center text-ocean mb-4">
+                <div
+                  className={`w-14 h-14 ${activity.accentColor} rounded-2xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-200`}
+                >
                   {activity.icon}
                 </div>
                 <h3 className="font-display text-lg font-bold text-ocean-deep mb-2">
@@ -432,12 +479,12 @@ export default function VisitOahu2() {
                 <p className="text-ocean-deep/65 text-sm leading-relaxed mb-4">
                   {activity.description}
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm border-t border-sand-dark/30 pt-4">
                   <div className="flex items-center justify-between">
                     <span className="text-ocean-deep/50 font-medium">
                       Duration:
                     </span>
-                    <span className="text-ocean-deep font-semibold">
+                    <span className="text-ocean-deep font-bold">
                       {activity.duration}
                     </span>
                   </div>
@@ -445,7 +492,7 @@ export default function VisitOahu2() {
                     <span className="text-ocean-deep/50 font-medium">
                       Difficulty:
                     </span>
-                    <span className="text-ocean-deep font-semibold">
+                    <span className="text-ocean-deep font-bold">
                       {activity.difficulty}
                     </span>
                   </div>
@@ -453,7 +500,7 @@ export default function VisitOahu2() {
                     <span className="text-ocean-deep/50 font-medium">
                       Best Time:
                     </span>
-                    <span className="text-ocean-deep font-semibold">
+                    <span className="text-ocean-deep font-bold">
                       {activity.bestTime}
                     </span>
                   </div>
@@ -465,10 +512,10 @@ export default function VisitOahu2() {
       </section>
 
       {/* Dining Highlights Section */}
-      <section ref={diningRef} id="dining" className="py-24 bg-sand">
+      <section ref={diningRef} id="dining" className="py-24 bg-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-coral font-semibold text-sm uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 bg-golden/20 text-golden-dark font-bold text-sm uppercase tracking-widest rounded-full px-4 py-2 mb-4">
               <UtensilsCrossed className="w-4 h-4" />
               <span>Food & Flavors</span>
             </div>
@@ -482,18 +529,25 @@ export default function VisitOahu2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {diningHighlights.map((highlight) => (
+            {diningHighlights.map((highlight, i) => (
               <div
                 key={highlight.title}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-sand-dark/30 text-center"
+                data-ocid={`dining.item.${i + 1}`}
+                className={`${highlight.bg} rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 text-center group`}
               >
-                <div className="w-16 h-16 bg-coral/10 rounded-full flex items-center justify-center text-coral mx-auto mb-4">
+                <div
+                  className={`w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center ${highlight.text} mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}
+                >
                   {highlight.icon}
                 </div>
-                <h3 className="font-display text-lg font-bold text-ocean-deep mb-2">
+                <h3
+                  className={`font-display text-lg font-bold ${highlight.text} mb-2`}
+                >
                   {highlight.title}
                 </h3>
-                <p className="text-ocean-deep/65 text-sm leading-relaxed">
+                <p
+                  className={`${highlight.text} opacity-80 text-sm leading-relaxed`}
+                >
                   {highlight.description}
                 </p>
               </div>
@@ -503,7 +557,8 @@ export default function VisitOahu2() {
           <div className="text-center">
             <Link
               to="/dining"
-              className="inline-flex items-center gap-2 bg-ocean-deep hover:bg-ocean text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-xl hover:shadow-ocean-deep/30 hover:-translate-y-0.5"
+              data-ocid="dining.explore.primary_button"
+              className="inline-flex items-center gap-2 bg-ocean-deep hover:bg-ocean text-white font-bold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-ocean-deep/40 hover:-translate-y-1"
             >
               <UtensilsCrossed className="w-5 h-5" />
               Explore Full Dining Guide
@@ -513,10 +568,10 @@ export default function VisitOahu2() {
       </section>
 
       {/* Visitor Tips Section */}
-      <section ref={tipsRef} id="tips" className="py-24 bg-ocean-pale">
+      <section ref={tipsRef} id="tips" className="py-24 bg-yellow-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-coral font-semibold text-sm uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 bg-tropical-green/10 text-tropical-green font-bold text-sm uppercase tracking-widest rounded-full px-4 py-2 mb-4">
               <Sun className="w-4 h-4" />
               <span>Practical Info</span>
             </div>
@@ -530,12 +585,13 @@ export default function VisitOahu2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {visitorTips.map((tip) => (
+            {visitorTips.map((tip, i) => (
               <div
                 key={tip.title}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-sand-dark/30"
+                data-ocid={`tips.item.${i + 1}`}
+                className={`bg-yellow-50 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 ${tip.accent}`}
               >
-                <div className="w-12 h-12 bg-ocean-pale rounded-xl flex items-center justify-center text-ocean mb-4">
+                <div className="w-12 h-12 bg-ocean-pale rounded-2xl flex items-center justify-center text-ocean mb-4">
                   {tip.icon}
                 </div>
                 <h3 className="font-display text-lg font-bold text-ocean-deep mb-2">
@@ -552,16 +608,17 @@ export default function VisitOahu2() {
 
       {/* CTA Banner */}
       <section className="relative py-20 overflow-hidden bg-ocean-deep">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-golden rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-coral rounded-full blur-3xl" />
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-golden/30 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-coral/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-tropical-green/20 rounded-full blur-2xl" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <span className="text-5xl mb-6 block">🌴</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
             Your Oahu Adventure Starts Here
           </h2>
-          <p className="text-white/75 text-lg mb-10 leading-relaxed">
+          <p className="text-white/80 text-lg mb-10 leading-relaxed">
             From sunrise on Diamond Head to sunset at Waikiki — Oahu is calling.
             Experience the perfect blend of urban energy, beach paradise, and
             island aloha.
@@ -569,14 +626,16 @@ export default function VisitOahu2() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               type="button"
+              data-ocid="cta.explore.primary_button"
               onClick={() => scrollTo(attractionsRef)}
-              className="bg-coral hover:bg-coral-dark text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-xl hover:shadow-coral/40 hover:-translate-y-0.5"
+              className="bg-coral hover:bg-coral-dark text-white font-bold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-coral/50 hover:-translate-y-1"
             >
               Explore Attractions
             </button>
             <Link
               to="/"
-              className="bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 text-center"
+              data-ocid="cta.all_islands.secondary_button"
+              className="bg-golden hover:bg-golden-dark text-ocean-deep font-bold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-xl hover:shadow-golden/40 hover:-translate-y-1 text-center"
             >
               Discover All Islands
             </Link>
@@ -585,45 +644,53 @@ export default function VisitOahu2() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-ocean-deep border-t border-white/10 py-10">
+      <footer className="bg-ocean-deep border-t border-golden/20 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
               <span className="text-2xl">🌴</span>
-              <span className="font-display text-lg font-bold text-white">
+              <span className="font-display text-lg font-bold text-golden">
                 Visit Oahu
               </span>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-white/50 text-sm">
               <button
                 type="button"
+                data-ocid="footer.attractions.link"
                 onClick={() => scrollTo(attractionsRef)}
-                className="hover:text-golden transition-colors"
+                className="hover:text-golden transition-colors font-medium"
               >
                 Attractions
               </button>
               <button
                 type="button"
+                data-ocid="footer.activities.link"
                 onClick={() => scrollTo(activitiesRef)}
-                className="hover:text-golden transition-colors"
+                className="hover:text-golden transition-colors font-medium"
               >
                 Activities
               </button>
               <button
                 type="button"
+                data-ocid="footer.dining.link"
                 onClick={() => scrollTo(diningRef)}
-                className="hover:text-golden transition-colors"
+                className="hover:text-golden transition-colors font-medium"
               >
                 Dining
               </button>
               <button
                 type="button"
+                data-ocid="footer.tips.link"
                 onClick={() => scrollTo(tipsRef)}
-                className="hover:text-golden transition-colors"
+                className="hover:text-golden transition-colors font-medium"
               >
                 Tips
               </button>
-              <Link to="/" className="hover:text-golden transition-colors">
+              <Link
+                to="/"
+                data-ocid="footer.all_islands.link"
+                className="hover:text-golden transition-colors font-medium"
+              >
                 All Islands
               </Link>
             </div>

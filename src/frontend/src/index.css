@@ -1,96 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque[opsz,wdth,wght].woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans[wght].woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
 
 @layer base {
   :root {
     --radius: 0.75rem;
 
-    /* Tropical Color Palette */
-    /* Ocean Deep - deep teal/navy */
-    --ocean-deep: 0.22 0.07 220;
-    /* Ocean - medium teal */
-    --ocean: 0.52 0.12 210;
-    /* Ocean Pale - very light teal */
-    --ocean-pale: 0.95 0.03 210;
-    /* Golden - warm sun yellow */
-    --golden: 0.82 0.16 80;
+    /* Vibrant Tropical Palette */
+    /* Deep Ocean Navy */
+    --ocean-deep: 0.2 0.09 240;
+    /* Bright Turquoise Ocean */
+    --ocean: 0.58 0.18 205;
+    /* Light Aqua */
+    --ocean-pale: 0.94 0.06 200;
+    /* Bright Sunshine Gold */
+    --golden: 0.88 0.2 82;
     /* Golden Dark */
-    --golden-dark: 0.72 0.16 75;
-    /* Coral - warm coral/orange-red */
-    --coral: 0.65 0.18 30;
+    --golden-dark: 0.76 0.2 78;
+    /* Vivid Hibiscus Coral */
+    --coral: 0.65 0.26 25;
     /* Coral Dark */
-    --coral-dark: 0.55 0.18 28;
-    /* Sand - warm sandy beige */
-    --sand: 0.97 0.02 80;
+    --coral-dark: 0.55 0.24 22;
+    /* Sandy White */
+    --sand: 0.98 0.02 85;
     /* Sand Dark */
-    --sand-dark: 0.88 0.04 80;
+    --sand-dark: 0.91 0.04 85;
+    /* Lush Tropical Green */
+    --tropical-green: 0.62 0.18 148;
+    /* Bright Fuchsia Accent */
+    --fuchsia: 0.65 0.28 340;
 
-    /* Semantic tokens mapped to tropical palette */
-    --background: 0.97 0.02 80;
-    --foreground: 0.22 0.07 220;
+    /* Semantic tokens */
+    --background: 0.98 0.02 85;
+    --foreground: 0.2 0.09 240;
     --card: 1 0 0;
-    --card-foreground: 0.22 0.07 220;
+    --card-foreground: 0.2 0.09 240;
     --popover: 1 0 0;
-    --popover-foreground: 0.22 0.07 220;
-    --primary: 0.65 0.18 30;
+    --popover-foreground: 0.2 0.09 240;
+    --primary: 0.65 0.26 25;
     --primary-foreground: 1 0 0;
-    --secondary: 0.95 0.03 210;
-    --secondary-foreground: 0.22 0.07 220;
-    --muted: 0.95 0.03 210;
-    --muted-foreground: 0.52 0.07 220;
-    --accent: 0.82 0.16 80;
-    --accent-foreground: 0.22 0.07 220;
+    --secondary: 0.94 0.06 200;
+    --secondary-foreground: 0.2 0.09 240;
+    --muted: 0.94 0.06 200;
+    --muted-foreground: 0.5 0.07 220;
+    --accent: 0.88 0.2 82;
+    --accent-foreground: 0.2 0.09 240;
     --destructive: 0.577 0.245 27.325;
     --destructive-foreground: 0.985 0 0;
-    --border: 0.88 0.04 80;
-    --input: 0.88 0.04 80;
-    --ring: 0.52 0.12 210;
-    --chart-1: 0.65 0.18 30;
-    --chart-2: 0.52 0.12 210;
-    --chart-3: 0.82 0.16 80;
-    --chart-4: 0.22 0.07 220;
-    --chart-5: 0.72 0.16 75;
-    --sidebar: 0.22 0.07 220;
+    --border: 0.88 0.05 85;
+    --input: 0.88 0.05 85;
+    --ring: 0.58 0.18 205;
+    --chart-1: 0.65 0.26 25;
+    --chart-2: 0.58 0.18 205;
+    --chart-3: 0.88 0.2 82;
+    --chart-4: 0.62 0.18 148;
+    --chart-5: 0.65 0.28 340;
+    --sidebar: 0.2 0.09 240;
     --sidebar-foreground: 1 0 0;
-    --sidebar-primary: 0.65 0.18 30;
+    --sidebar-primary: 0.65 0.26 25;
     --sidebar-primary-foreground: 1 0 0;
-    --sidebar-accent: 0.52 0.12 210;
+    --sidebar-accent: 0.58 0.18 205;
     --sidebar-accent-foreground: 1 0 0;
     --sidebar-border: 1 0 0 / 10%;
-    --sidebar-ring: 0.52 0.12 210;
+    --sidebar-ring: 0.58 0.18 205;
   }
 
   .dark {
-    --background: 0.18 0.06 220;
-    --foreground: 0.97 0.02 80;
-    --card: 0.22 0.07 220;
-    --card-foreground: 0.97 0.02 80;
-    --popover: 0.25 0.07 220;
-    --popover-foreground: 0.97 0.02 80;
-    --primary: 0.65 0.18 30;
+    --background: 0.16 0.07 240;
+    --foreground: 0.98 0.02 85;
+    --card: 0.2 0.09 240;
+    --card-foreground: 0.98 0.02 85;
+    --popover: 0.24 0.09 240;
+    --popover-foreground: 0.98 0.02 85;
+    --primary: 0.65 0.26 25;
     --primary-foreground: 1 0 0;
-    --secondary: 0.28 0.07 220;
-    --secondary-foreground: 0.97 0.02 80;
-    --muted: 0.28 0.07 220;
-    --muted-foreground: 0.65 0.05 210;
-    --accent: 0.82 0.16 80;
-    --accent-foreground: 0.22 0.07 220;
+    --secondary: 0.26 0.08 240;
+    --secondary-foreground: 0.98 0.02 85;
+    --muted: 0.26 0.08 240;
+    --muted-foreground: 0.62 0.06 210;
+    --accent: 0.88 0.2 82;
+    --accent-foreground: 0.2 0.09 240;
     --destructive: 0.704 0.191 22.216;
-    --destructive-foreground: 0.22 0.07 220;
+    --destructive-foreground: 0.2 0.09 240;
     --border: 1 0 0 / 10%;
     --input: 1 0 0 / 15%;
-    --ring: 0.52 0.12 210;
-    --sidebar: 0.22 0.07 220;
-    --sidebar-foreground: 0.97 0.02 80;
-    --sidebar-primary: 0.65 0.18 30;
+    --ring: 0.58 0.18 205;
+    --sidebar: 0.2 0.09 240;
+    --sidebar-foreground: 0.98 0.02 85;
+    --sidebar-primary: 0.65 0.26 25;
     --sidebar-primary-foreground: 1 0 0;
-    --sidebar-accent: 0.28 0.07 220;
-    --sidebar-accent-foreground: 0.97 0.02 80;
+    --sidebar-accent: 0.26 0.08 240;
+    --sidebar-accent-foreground: 0.98 0.02 85;
     --sidebar-border: 1 0 0 / 10%;
-    --sidebar-ring: 0.52 0.12 210;
+    --sidebar-ring: 0.58 0.18 205;
   }
 
   * {
@@ -103,6 +120,6 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 }

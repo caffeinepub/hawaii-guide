@@ -16,8 +16,8 @@ export default {
         },
         extend: {
             fontFamily: {
-                display: ['Playfair Display', 'Georgia', 'serif'],
-                body: ['Inter', 'system-ui', 'sans-serif'],
+                display: ['Bricolage Grotesque', 'Georgia', 'sans-serif'],
+                body: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
             },
             colors: {
                 border: 'oklch(var(--border))',
@@ -80,6 +80,8 @@ export default {
                 'coral-dark': 'oklch(var(--coral-dark))',
                 'sand': 'oklch(var(--sand))',
                 'sand-dark': 'oklch(var(--sand-dark))',
+                'tropical-green': 'oklch(var(--tropical-green))',
+                'fuchsia': 'oklch(var(--fuchsia))',
             },
             borderRadius: {
                 lg: 'var(--radius)',
